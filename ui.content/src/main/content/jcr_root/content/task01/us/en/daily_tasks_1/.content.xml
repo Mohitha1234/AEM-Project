@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-06-09T18:50:33.339+05:30"
+        cq:lastModified="{Date}2025-06-09T19:47:45.773+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/task01/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
@@ -44,6 +44,39 @@
                                 itemText="jithendra"/>
                         </multiField>
                     </task1_headercomponen>
+                    <task2_carouselcompon
+                        jcr:created="{Date}2025-06-09T19:42:29.281+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2025-06-09T19:47:45.759+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="task01/components/task2-carouselcomponent">
+                        <slides jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                path="/apps/Demo"
+                                text="Sam">
+                                <subItems jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        subText="sai jithendra"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        subText="kalyan kumar"/>
+                                </subItems>
+                            </item0>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                path="/apps/Demo"
+                                text="Kalyan">
+                                <subItems jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        subText="shiva parvathi"/>
+                                </subItems>
+                            </item1>
+                        </slides>
+                    </task2_carouselcompon>
                 </container>
             </container>
         </root>
