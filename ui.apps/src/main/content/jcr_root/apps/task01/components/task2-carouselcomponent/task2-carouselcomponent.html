@@ -1,0 +1,12 @@
+<div data-sly-use.model="com.task01.core.models.CarouselModel">
+  <div class="carousel" data-sly-list.slide="${model.slides}">
+    <div class="slide">
+      <h3>${slide.text}</h3>
+      <p>Path: ${slide.path}</p>
+
+      <ul class="subitems" data-sly-list.subItem="${slide.subItems}">
+        <li>${subItem.subText}</li>
+      </ul>
+    </div>
+  </div>
+</div>
