@@ -1,0 +1,11 @@
+<div data-sly-use.model="com.task01.core.models.HeaderModel">
+  <div><strong>Path:</strong> ${model.path}</div>
+  <div><strong>Text:</strong> ${model.text}</div>
+  <div><strong>Enabled:</strong> ${model.enabled}</div>
+
+  <ul>
+    <sly data-sly-list.item="${model.items}">
+      <li>${item.itemText} - ${item.itemDate}</li>
+    </sly>
+  </ul>
+</div>
