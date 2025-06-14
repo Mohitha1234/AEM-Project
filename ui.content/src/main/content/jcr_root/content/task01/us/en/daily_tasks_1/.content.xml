@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2025-06-14T17:16:59.436+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/task01/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Daily_Tasks_1"
+        sling:resourceType="task01/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="task01/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="task01/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="task01/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="task01/components/container"
+                    layout="responsiveGrid">
+                    <task1_headercomponen
+                        jcr:created="{Date}2025-06-09T18:49:56.928+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2025-06-09T18:50:33.329+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="task01/components/task1-headercomponent"
+                        enabled="true"
+                        path="/apps/Demo"
+                        text="Sai Jithendra">
+                        <multiField jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                itemDate="{Date}2025-06-09T00:00:00.000+05:30"
+                                itemText="sai"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                itemDate="{Date}2025-06-09T00:00:00.000+05:30"
+                                itemText="jithendra"/>
+                        </multiField>
+                    </task1_headercomponen>
+                    <task2_carouselcompon
+                        jcr:created="{Date}2025-06-09T19:42:29.281+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2025-06-09T19:47:45.759+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="task01/components/task2-carouselcomponent">
+                        <slides jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                path="/apps/Demo"
+                                text="Sam">
+                                <subItems jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        subText="sai jithendra"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        subText="kalyan kumar"/>
+                                </subItems>
+                            </item0>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                path="/apps/Demo"
+                                text="Kalyan">
+                                <subItems jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        subText="shiva parvathi"/>
+                                </subItems>
+                            </item1>
+                        </slides>
+                    </task2_carouselcompon>
+                    <task3_sidebarcompone
+                        jcr:created="{Date}2025-06-14T16:13:35.497+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2025-06-14T17:16:59.424+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="task01/components/task3-sidebarcomponent"
+                        country="india"
+                        enableSwitch="true"
+                        info="&lt;p>sai jithendra&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                        logoLink="/content/aemgeeks"
+                        logoMobileImage="/apps/Demo"
+                        logoPath="/apps/"
+                        textIsRich="true">
+                        <headerLinks jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                image="/sam/image"
+                                name="Sam"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                image="/kalyan/image"
+                                name="kalyan"/>
+                        </headerLinks>
+                        <sidebarNavigation jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                desktopIcon="/content/dam/Demo"
+                                mobileIcon="/content/dam/Demo">
+                                <navigationUrls jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        navigationUrl="/content/Project"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        navigationUrl="sam"/>
+                                </navigationUrls>
+                            </item0>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                desktopIcon="/content/dam/Demo"
+                                mobileIcon="/appd/dam">
+                                <navigationUrls jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        navigationUrl="sam"/>
+                                </navigationUrls>
+                            </item1>
+                        </sidebarNavigation>
+                    </task3_sidebarcompone>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
