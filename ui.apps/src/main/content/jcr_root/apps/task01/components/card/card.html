@@ -1,0 +1,9 @@
+<sly data -sly -use obj="com.task01.core.models.card">
+    <ul data-sly-list.item="${obj.multifield1}">
+        <li> name:${item.firstname}</li>
+        <li>car:${item.pathfield}</li>
+        <ul data-sly list.item1="${item.multifield}">
+            <li>text:${item1.textfield}</li>
+        </ul>
+    </ul>
+</sly>

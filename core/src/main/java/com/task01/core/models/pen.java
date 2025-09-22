@@ -1,0 +1,12 @@
+package com.task01.core.models;
+
+import javax.annotation.Resource;
+
+import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Model;
+
+@Model(adaptables = Resource.class,defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+public class pen {
+    
+
+}

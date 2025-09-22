@@ -1,0 +1,15 @@
+
+
+<div data-sly-use.model="com.task01.core.models.DemoModel"></div>
+    <div class="article-title">Title: ${model.articleTitle}</div><br>
+    <div class="article-des">Description: ${model.articleDescription}</div><br>
+
+
+<div data-sly-list.item="${model.completeBookdetails}">
+    <h1>BookSubject:${item.booksubject}</h1>
+    <h1>BookNumber:${item.bookNumber}</h1> 
+ </div>
+
+
+<h2>JavaScript Alert</h2>
+<button onclick="myFunction()">Click me</button>
