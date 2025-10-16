@@ -1,9 +1,12 @@
-<sly data -sly -use obj="com.task01.core.models.card">
-    <ul data-sly-list.item="${obj.multifield1}">
-        <li> name:${item.firstname}</li>
-        <li>car:${item.pathfield}</li>
-        <ul data-sly list.item1="${item.multifield}">
-            <li>text:${item1.textfield}</li>
+<sly data-sly-use.obj="com.task01.core.models.Card">
+<div>
+    <ul data-sly-list.item="${obj.multifield}">
+        <li>
+            <h1>Name: ${item.firstname}</h1>
+            <p>Path: ${item.pathfield}</p>
+            <ul data-sly-list.item1="${item.multifield}">
+            <li>title:${item1.text}</li>
         </ul>
-    </ul>
+    </li>
+</div>
 </sly>

@@ -10,15 +10,16 @@ import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ChildResource;
 
 
-@Model(adaptables = Resource.class,defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class card {
-    @ChildResource(name="multifield")
-    private List<pen> multifield1;
+@Model(
+    adaptables = Resource.class,
+    defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
+    adapters = Card.class
+)
+public class Card {
+    @ChildResource
+    private List<Pen> multifield;
 
-    public List<pen> getMultifield() {
-        return multifield1;
+    public List<Pen> getMultifield() {
+        return multifield;
     }
-    
-
-
 }

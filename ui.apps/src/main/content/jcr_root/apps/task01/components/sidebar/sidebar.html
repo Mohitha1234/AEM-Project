@@ -1,0 +1,19 @@
+<sly data-sly-use.model="com.task01.core.models.Sidebarr"/>
+<div>
+	<p>${model.logoPath}</p>
+    <p>${model.logoMobile}</p>
+    <p>${model.logoLink}</p>
+    <p>${model.enableSwitch}</p>
+    <p>${model.country}</p>
+  <ul data-sly-list.item="${model.multifield}">
+    <li>Name:${item.name}</li>
+    <li>Image:${item.image}</li>
+  </ul>
+  <ul data-sly-list.item2="${model.multifield2}">
+	<li>Name:${item2.desktopicon}</li>
+    <li>Image:${item2.mobileicon}</li>
+     <ul data-sly-list.item3="${item2.multifield1}">
+        <li>Name:${item3.navUrl}</li>
+     </ul>
+  </ul>
+</div>

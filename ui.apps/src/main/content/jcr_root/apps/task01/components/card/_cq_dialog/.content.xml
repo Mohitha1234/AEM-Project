@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Properties"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <content
         jcr:primaryType="nt:unstructured"
@@ -11,21 +10,16 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <nested_x0020_multifield
+                    <nestedmultifield
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield&#xa;"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                         composite="{Boolean}true"
-                        fieldLabel="nestedmultifield">
+                        fieldLabel="multifield">
                         <field
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/container"
-                            name="./multifield1">
+                            sling:resourceType="granite/ui/components/coral/foundation/well"
+                            name="./multifield">
                             <items jcr:primaryType="nt:unstructured">
-                                <textfield
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                    fieldLabel="textfield"
-                                    name="./firstname"/>
                                 <pathfield
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
@@ -33,25 +27,30 @@
                                     name="./pathfield"/>
                                 <multifield
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield&#xa;"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                                     composite="{Boolean}true"
-                                    fieldLabel="multifield&#xa;">
+                                    fieldLabel="multifield">
                                     <field
                                         jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/foundation/well"
-                                        name="./multifield&#xa;">
+                                        sling:resourceType="granite/ui/components/coral/foundation/well"
+                                        name="./multifield1">
                                         <items jcr:primaryType="nt:unstructured">
                                             <text
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield&#xa;"
-                                                fieldLabel="textfield&#xa;"
-                                                name="./textfield&#xa;"/>
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="textfield"
+                                                name="./textfield1"/>
                                         </items>
                                     </field>
                                 </multifield>
+                                <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="textfield"
+                                    name="./firstname"/>
                             </items>
                         </field>
-                    </nested_x0020_multifield>
+                    </nestedmultifield>
                 </items>
             </column>
         </items>

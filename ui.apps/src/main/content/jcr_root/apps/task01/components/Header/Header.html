@@ -1,14 +1,11 @@
-<sly data-sly-use.model ="com.task01.core.models.ValueField">
+<sly data-sly-use.model="com.task01.core.models.ValueField">
   <div>
-    <h1>Text: ${model.firstname}</h1>
-    <p>Checkbox: ${model.checkbox ? 'checked' : 'unchecked'}</p>
-    <img src="${model.pathfield}" alt="Header Image" />
-
-    <p>Multifield size: ${model.multifield.size}</p>
-
+    <h1>Text:${model.firstname}</h1>
+    <p>Checkbox:${model.checkbox}</p>
+    <img src="${model.pathfield}" alt="Header Image" height=50px width=50px />
     <ul data-sly-list.item="${model.multifield}">
-      <li>Title: ${item.textfield1}</li>
-      <li>Date: ${item.datepicker}</li>
+      <li>Title:${item.textfield1}</li>
+      <li>Date:${item.datepicker}</li>
     </ul>
   </div> 
 </sly>
