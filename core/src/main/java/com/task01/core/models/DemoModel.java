@@ -45,7 +45,7 @@ public class DemoModel implements Demo {
         return number;
     }
     @Override
-    public String[] getBookNames() {
+    public String[] getBookNames () {
         return books;
     }
    @Override
