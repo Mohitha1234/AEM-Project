@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="propertites"
+    jcr:title="Properties"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <content
         jcr:primaryType="nt:unstructured"
@@ -11,32 +11,16 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <namefield
+                    <text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="name"
-                        name="./name"/>
-                    <title
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="role"
-                        name="./title"/>
-                    <location
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="qualification"
-                        name="./location"/>
-                    <imagePath
+                        fieldLabel="Text"
+                        name="./text"/>
+                    <pathfield
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                        allowUpload="{Boolean}true"
-                        autoStart="{Boolean}false"
-                        fieldLabel="Hero Image"
-                        fileNameParameter="./fileName"
-                        fileReferenceParameter="./imagePath"
-                        multiple="{Boolean}false"
-                        name="./imagePath"
-                        required="{Boolean}true"
+                        fieldLabel="Page Path"
+                        name="./pagePath"
                         rootPath="/content"/>
                 </items>
             </column>
